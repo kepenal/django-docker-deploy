@@ -27,7 +27,7 @@ cd /home/django_projects/x
 touch db.sqlite3
 mkdir -p staticfiles media templates
 
-# NGINX'ih staticfiles dosyaları okuyabilmesi için izin ayarını yapalım
+# NGINX'in staticfiles dosyaları okuyabilmesi için izin ayarını yapalım
 sudo chmod -R 755 /home/django_projects/test_com
 ```
 
