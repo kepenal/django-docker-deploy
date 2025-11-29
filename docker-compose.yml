@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    image: django-project-1:latest 
+    container_name: django_app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8001:8000"
+    # x kısımlarına projeninde içerisinde bulunduğu ana klasörün adının yazılması gerekiyor.
+    volumes:
+      - /home/django_projects/x:/app
+      - /home/django_projects/x/db.sqlite3:/app/db.sqlite3
+      - /home/django_projects/x/staticfiles:/app/staticfiles
