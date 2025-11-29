@@ -1,0 +1,20 @@
+# Sanal ortam klasörleri (Kesinlikle içeri girmemeli)
+venv
+.venv
+env
+
+# Git dosyaları
+.git
+.gitignore
+
+# Python önbellek dosyaları
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Veritabanı (Bunu volume ile bağlayacağız, kopyalamaya gerek yok)
+db.sqlite3
+
+# Statik dosyalar (Bunlar zaten yeniden oluşturulacak)
+staticfiles
